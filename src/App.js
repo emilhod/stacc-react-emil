@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react';
+import axios from "axios";
 
 function App() {
+  const [kyc, setKyc] = useState(null);
+
+  const getKycData = async () => {
+    const response = await axios.get("https://stacc-code-challenge-2021.azurewebsites.net/api/pep?name=Knut%20Arild%20Hareide");
+    setKyc(response.data);
+  };
+  
+  useEffect(() => {
+    getKycData();
+  }, []);
+
+  
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>{kyc}</p>
+ 
     </div>
-  );
+  )
 }
 
 export default App;
