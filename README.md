@@ -1,3 +1,35 @@
+# Stacc code challenge 2021
+
+## Oppgavebeskrivelse
+Jeg valgte oppgave a, en enkel webapp som utefører en KYC check av en person.
+
+## Hvordan kjøre prosjektet
+npm start, se lenger nede for mer info.
+
+## Kommentarer
+Jeg valgte oppgave A fordi dette er noe jeg egentlig ikke har gjort så mye av før. På skolen har vi ikke hatt noe frontend, og jeg har heller ikke vært borti det så mye selv. Jeg valgte derfor denne oppgaven til å prøve å lære meg React. I retrospekt er jeg kanskje litt usikker på om det var en god ide. Selve applikasjonen ble ikke så veldig bra, og jeg tror om jeg hadde valgt en annen vinkling hadde jeg klart å få til mere. Men jeg synes det har vært utrolig interessant å lære om react. Jeg måtte tenkte på en ny måte, noe som var utfordrerne, men også veldig gøy når jeg fikk det det lille jeg gjorde i denne oppgaven. Jeg kommer definitivt til å fortsette å lære meg react, og fortsette på denne oppgaven.
+
+<br>
+<br>
+
+Jeg valgte å publisere appen i Azure med Azure App Services og Azure devOps. Siden jeg har en helt ny account venter jeg på manuell godkjenning fra microsoft for å få lov til å publisere. Når dere leser dette er den forhåpentligvis oppe og går på https://kyccheck.azurewebsites.net/
+
+
+
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br>
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
