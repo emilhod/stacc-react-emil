@@ -26,18 +26,30 @@ function App() {
   
 
   return (
-    <div className = "App">
-            <ol>
-             {
-                kyc.map((item) => ( 
-                <li key = { item.id } >
-                    userID: { item.id }, 
-                    Navn: { item.name }, 
-                    </li>
-                ))
-            }
-            </ol>
-        </div>
+    
+    <div className="tableData" >
+      
+    {
+      kyc.map((data =>
+        <table style={{color: "black"}}>
+          <tr>
+            <th>Name</th>
+            <th>Score</th>
+            <th>ID</th>
+            <th>Dataset</th>
+            <th>Last Seen</th>
+          </tr>
+          <tr>
+            <td>{data.name}</td>
+            <td>{data.score}</td>
+            <td>{data.id}</td>
+            <td>{data.dataset}</td>
+            <td>{data.last_seen}</td>
+          </tr>
+        </table>
+      ))
+    }
+  </div>
   )
 }
 
