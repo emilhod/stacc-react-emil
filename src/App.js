@@ -18,7 +18,7 @@ function App() {
 
   
   useEffect(() => {
-    fetchData();
+    
   }, []);
 
   
@@ -27,29 +27,13 @@ function App() {
 
   return (
     
-    <div className="tableData" >
-      
-    {
-      kyc.map((data =>
-        <table style={{color: "black"}}>
-          <tr>
-            <th>Name</th>
-            <th>Score</th>
-            <th>ID</th>
-            <th>Dataset</th>
-            <th>Last Seen</th>
-          </tr>
-          <tr>
-            <td>{data.name}</td>
-            <td>{data.score}</td>
-            <td>{data.id}</td>
-            <td>{data.dataset}</td>
-            <td>{data.last_seen}</td>
-          </tr>
-        </table>
-      ))
-    }
-  </div>
+    <form>
+    <label>
+       Name:
+      <input type="text" name="name" />
+      </label>
+      <input type="submit" value="Submit" />
+</form>
   )
 }
 
